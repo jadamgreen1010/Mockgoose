@@ -148,7 +148,7 @@ module.exports = function(mongoose, db_opts) {
                     // The child process status code is always returned, so keep using startResult until the issue resolves.
                     // This callback is required so start_server doesn't crash trying to call undefined as a function.
                     debug('mongod.start_server callback called: ' + response);
-                });                });
+                });
                 if (startResult === 0) {
                     debug('mongod.start_server connected');
                     var mock_uri = "mongodb://localhost:" + db_opts.port;
